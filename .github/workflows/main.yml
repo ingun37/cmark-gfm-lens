@@ -19,4 +19,4 @@ jobs:
         name: inguncache
         authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
     - run: |
-        nix build .#cmark-lens:lib:cmark-lens
+        nix build .#cmark-gfm-lens:lib:cmark-gfm-lens
