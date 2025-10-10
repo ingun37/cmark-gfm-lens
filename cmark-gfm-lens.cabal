@@ -1,4 +1,4 @@
-cabal-version:      3.14
+cabal-version:      3.12
 -- The cabal-version field refers to the version of the .cabal specification,
 -- and can be different from the cabal-install (the tool) version and the
 -- Cabal (the library) version you are using. As such, the Cabal (the library)
@@ -20,13 +20,13 @@ name:               cmark-gfm-lens
 -- PVP summary:     +-+------- breaking API changes
 --                  | | +----- non-breaking API additions
 --                  | | | +--- code changes with no API change
-version:            0.1.0.0
+version:            0.2.0.0
 
 -- A short (one-line) description of the package.
-synopsis:           Collection of Lens for cmark-gfm
+synopsis:           Collection of Lens for cmark-gfm with minimal dependencies
 
 -- A longer description of the package.
--- description:
+description:        Unofficial collection of Lens for cmark-gfm with minimal dependencies
 
 -- URL for the project homepage or repository.
 homepage:           https://github.com/ingun37/cmark-gfm-lens
@@ -54,6 +54,15 @@ extra-doc-files:    CHANGELOG.md
 -- Extra source files to be distributed with the package, such as examples, or a tutorial module.
 -- extra-source-files:
 
+source-repository this
+    type:     git
+    location: https://github.com/ingun37/cmark-gfm-lens.git
+    tag:      7c57b38c7ddb8888df8b3b92800a42a1ac0ac359
+
+source-repository head
+    type:     git
+    location: https://github.com/ingun37/cmark-gfm-lens.git
+
 common warnings
     ghc-options: -Wall
 
@@ -74,8 +83,8 @@ library
     build-depends:
         base ^>=4.21.0.0,
         cmark-gfm >= 0.2.6 && < 0.3,
-        text,
-        profunctors
+        text ^>=2.1.2,
+        profunctors ^>=5.6.3
 
     -- Directories containing source files.
     hs-source-dirs:   src
