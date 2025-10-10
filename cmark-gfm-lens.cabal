@@ -57,7 +57,7 @@ extra-doc-files:    CHANGELOG.md
 source-repository this
     type:     git
     location: https://github.com/ingun37/cmark-gfm-lens.git
-    tag:      7c57b38c7ddb8888df8b3b92800a42a1ac0ac359
+    tag:      7fdb8db41b3a6fce79734f305e59bfb51d26df88
 
 source-repository head
     type:     git
