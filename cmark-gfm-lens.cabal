@@ -20,7 +20,7 @@ name:               cmark-gfm-lens
 -- PVP summary:     +-+------- breaking API changes
 --                  | | +----- non-breaking API additions
 --                  | | | +--- code changes with no API change
-version:            0.2.1
+version:            0.2.2
 
 -- A short (one-line) description of the package.
 synopsis:           Collection of Lens for cmark-gfm with minimal dependencies
